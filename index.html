@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>FEVA</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+        <script src="jquery-4.0.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo">FEVA</a>
+                <div class="icon">
+                    <img src="images/menu.svg" class="menu">    
+                    <img src="images/close.svg" class="close">    
+                </div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <section id="banner" style="background-image: url(images/banner1.jpg);">
+                <h1>We believe in excellent</h1>
+            </section>
+            <section id="news">
+                <div class="container">
+                    <div class="item">
+                        <h2>Lesson 1</h2>
+                        <img src="images/1.jpg">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                    <div class="item">
+                        <h2>Lesson 2</h2>
+                        <img src="images/2.jpg">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                    <div class="item">
+                        <h2>Lesson 3</h2>
+                        <img src="images/3.jpg">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                    <div class="item">
+                        <h2>Lesson 4</h2>
+                        <img src="images/4.jpg">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                    <div class="item">
+                        <h2>Lesson 5</h2>
+                        <img src="images/5.jpg">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                    <div class="item">
+                        <h2>Lesson 6</h2>
+                        <img src="images/6.jpg">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="faq">
+                <div class="container">
+                    <h1>FAQs</h1>
+                    <ul>
+                        <li>
+                            <div class="q">What is Lorem Ipsum?</div>
+                            <div class="a">The printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades</div>
+                        </li>
+                        <li>
+                            <div class="q">Why do we use it?</div>
+                            <div class="a">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
+                        </li>
+                        <li>
+                            <div class="q">Where does it come from?</div>
+                            <div class="a">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</div>
+                        </li>
+                        <li>
+                            <div class="q">Where can I get some?</div>
+                            <div class="a">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="gallery">
+                <div class="container">
+                    <h1>Gallery</h1>
+                    <div class="slider">
+                        <img src="images/b1.jpg">
+                        <img src="images/b2.jpg">
+                        <img src="images/b3.jpg">
+                    </div>
+            </section>
+        </main>
+
+        <footer>&copy; FEVA 202X</footer>
+
+        <script>
+            $(document).ready(function(){
+                $(".slider").bxSlider({
+                    mode: "horizontal",
+                    speed: 1000,
+                    touchEnabled: true,
+                    infiniteLoop: true,
+                    auto: true,
+                    autoHover: true,
+                    pause: 3000
+                });
+
+                $("#faq .a").hide();
+
+                $("#faq .q").on("click",function(){
+                    $(this).siblings().slideToggle();
+                    $(this).parent().siblings().children(".a").slideUp();
+                    $(this).parent().toggleClass("open").siblings().removeClass("open");
+                });
+
+                $(document).ready(function(){
+    
+                $("header .icon").on("click",function(){
+                    $("header nav").slideToggle();
+                    $("header .icon img").toggle();
+                });
+
+                });
+
+
+                $("#banner").on("click",function(){
+                    alert("hi");
+                });
+            });
+        </script>
+    </body>
+</html>

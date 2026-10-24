@@ -1,0 +1,205 @@
+body{
+	font-family: "Roboto", sans-serif;
+	/* font-size: 1.1em; */
+}
+
+.container{
+    max-width:1000px;
+    margin:0 auto;
+}
+
+header{
+    background-color:#069;
+    padding:20px;
+	.container{
+		display: flex;
+		justify-content: space-between;
+	}
+	a{
+		color:#FFF;
+		text-decoration: none;
+	}
+	.logo{
+		font-weight: 700;
+	}
+	.icon{
+		display: none;
+	}
+	nav {
+		a{
+			margin:0 10px;
+		}
+		a:hover{
+			color:#FF0;
+		}
+	}
+}
+
+main{}
+
+#banner{
+	height: 500px;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#banner h1{
+	color:#FFF;
+	font-size: 2.25em;
+}
+
+#news .container{
+	display: flex;
+	flex-wrap: wrap;
+    padding:20px 0;
+}
+#news .item{
+	width:33.33%;
+    padding:20px 10px;
+}
+#news .item h2{
+	font-size:1.25em;
+	color:#069;
+	font-weight: 700;
+}
+#news .item img{
+	margin:10px 0;
+}
+#news .item p{
+	color:#999;
+	line-height: 150%;
+}
+#faq{
+	background-color: #EEE;
+	text-align: center;
+	padding:50px 25px;
+}
+#faq h1{
+	font-size: 2em;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+#faq li{
+	border-top: dashed 1px #CCC;
+	padding:25px 10px;
+}
+#faq li.open{
+	background-color: #FFF;
+	box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+#faq .q{
+	cursor: pointer;
+}
+#faq .q:hover,#faq li.open .q{
+	color:#069;
+	text-decoration: underline;
+}
+#faq .a{
+	margin-top: 10px;
+	line-height: 140%;
+	color:#666;
+}
+#gallery{
+	padding: 50px 25px;
+	text-align: center;
+}
+#gallery h1{
+	font-size: 2em;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+footer{
+    background-color: #333;
+	color:#CCC;
+	text-align: center;
+	padding:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:540px){
+body{}
+
+.container{
+    width:100%;
+}
+header{
+    text-align: center;
+}
+header .container{
+    flex-wrap: wrap;
+}
+header .logo{
+	font-size: 2em;
+}
+header .icon{
+	display: block;
+}
+header .icon img{
+	height: 32px;
+}
+header .icon .close{
+	display: none;
+}
+header nav{
+    margin-top: 15px;
+	width: 100%;
+	display: none;
+}
+header nav a{
+	display: block;
+	border-top: solid 1px #FFF;
+	padding:15px 0;
+	margin:0;
+}
+
+#news .container{
+    padding:0;
+}
+#news .item{
+	width:100%;
+    padding:50px 25px;
+	border-bottom: dashed 1px #DDD;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
