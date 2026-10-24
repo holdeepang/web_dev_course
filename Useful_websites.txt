@@ -1,0 +1,10 @@
+Coolors.co = for color palettes
+Adobe color palette
+Flaticon.com = for emoji and emoticons
+pexels.com = stock photos
+Download jquery:
+Reset css:
+Best jquery plugins:
+bxslider = for box slider of gallery photos
+slick slider = for better box slider
+lightbox = those enlarge photos overlay
