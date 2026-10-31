@@ -1,0 +1,34 @@
+URL
+www.sub-domain.domain/folder../file.extension?query-entry
+How it works:
+1. every website www.abc.com --> points to an ip address 00.00.00.00
+2. User sends request to server, when click on ip address
+3. request arrive to router (internet IPv4)
+4. router then redirect to the machine / server actually hosting the website (device IPv4)
+5. Port forwarding: through specific / default ports (eg: http = 80, https = 443)
+6. All the php, html, css, js then send through to user again (which you will know their ip address in Apache access.log)
+
+Website hosting needed:
+Apache = basically the HTTP server
+PHP = server side content management system language
+MySQL / MariaDB = Data management and query
+phpMyAdmin = A more useful combination of php and MySQL
+
+Install:
+Xampp = combine all the previous ones into one control panel
+
+Test:
+localhost = should be inside the htdocs folder/ index.php
+
+網頁寄存 公司 Web hosting companies = to host server for you instead of your own machine
+GoDaddy = Domain registration, get the domain name you want to cover the IP address
+DNS = Domain Name system
+
+TP link router login:
+Change in advanced settings
+Port forwarding
+int. and ext. port = 80
+Host
+Enter device IPv4
+
+###### Internet IP address may be dynamic !!! esp after restart router

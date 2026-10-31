@@ -1,3 +1,11 @@
 Figures showcase
 Games reviews website + screenshots from games
-Diligence centre
+Tutorial centre
+
+
+Good examples:
+https://adamgryu.com/  (nice font and simple design)
+
+##RMB###
+to use style.scss and ensure the changes go to normal style.css
+NEED TO turn on Watch sass live !!!!!!

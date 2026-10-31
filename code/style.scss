@@ -152,32 +152,32 @@ body{}
 }
 header{
     text-align: center;
-}
-header .container{
-    flex-wrap: wrap;
-}
-header .logo{
-	font-size: 2em;
-}
-header .icon{
-	display: block;
-}
-header .icon img{
-	height: 32px;
-}
-header .icon .close{
-	display: none;
-}
-header nav{
-    margin-top: 15px;
-	width: 100%;
-	display: none;
-}
-header nav a{
-	display: block;
-	border-top: solid 1px #FFF;
-	padding:15px 0;
-	margin:0;
+	.container{
+		flex-wrap: wrap;
+	}
+	.logo{
+		font-size: 1.5em;
+	}
+	.icon{
+		display: block;
+	}
+	.icon img{
+		height: 24px;
+	}
+	.icon .close{
+		display: none;
+	}
+	nav{
+		margin-top: 15px;
+		width: 100%;
+		display: none;
+	}
+	nav a{
+		display: block;
+		border-top: solid 1px #FFF;
+		padding:15px 0;
+		margin:0;
+	}
 }
 
 #news .container{

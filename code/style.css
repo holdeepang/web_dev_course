@@ -139,13 +139,13 @@ footer {
     flex-wrap: wrap;
   }
   header .logo {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   header .icon {
     display: block;
   }
   header .icon img {
-    height: 32px;
+    height: 24px;
   }
   header .icon .close {
     display: none;
