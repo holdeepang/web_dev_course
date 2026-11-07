@@ -101,7 +101,11 @@
             </section>
         </main>
 
-        <footer>&copy; FEVA 202X</footer>
+        <footer>&copy; FEVA 202X 
+            <?php 
+                echo(date("d/M/Y (D)"));
+            ?>
+        </footer>
 
         <script>
             $(document).ready(function(){
@@ -112,7 +116,8 @@
                     infiniteLoop: true,
                     auto: true,
                     autoHover: true,
-                    pause: 3000
+                    pause: 6000,
+                    adaptiveHeight: true
                 });
 
                 $("#faq .a").hide();
